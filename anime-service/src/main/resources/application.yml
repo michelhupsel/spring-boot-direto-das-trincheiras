@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: anime-service
+  threads:
+    virtual:
+      enabled: true
+  logging:
+    level:
+      academy.devdojo: debug
+server:
+  servlet:
+    context-path: / #${spring.application.name}
+  error:
+    include-stacktrace: on_param
+  tomcat:
+    threads:
+      max: 20
+
